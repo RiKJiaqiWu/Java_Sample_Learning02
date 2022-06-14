@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class AiMainControl {
          public static void main(String[] args) {
-            AI ai2 = new AI();
+            AI ai = new AI();
             Scanner in = new Scanner(System.in);
             while (true) {
                 String input = in.next();
@@ -11,7 +11,7 @@ public class AiMainControl {
                     System.out.println("再见！");
                     break;
                 }
-                String answer = ai2.answer(input);
+                String answer = ai.answer(input);
                 System.out.println(answer);
             }
         }
