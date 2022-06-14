@@ -2,23 +2,17 @@ package com.geekbang.learn.AI;
 
 public class AI {
     public String answer(String question) {
-
         String ret = null;
-
         ret = handleCanStart(question);
-
         if (ret != null) {
             return ret;
         }
 
         ret = handleAskTail(question);
-
         if (ret != null) {
             return ret;
         }
-
         return handleUnknown(question);
-
     }
 
     private String handleCanStart(String question) {
