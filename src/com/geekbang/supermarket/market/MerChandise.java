@@ -1,7 +1,6 @@
 package com.geekbang.supermarket.market;
 
 public class MerChandise {
-
     public String name;
     public String id;
     public int count;
@@ -22,19 +21,12 @@ public class MerChandise {
         return profit;
     }
 
-    // >> TODO 参数是定义在方法名字后面的括号里的
-    // >> TODO 参数定义的规范和变量一样，都是类型名字加标识符，这里的标识符我们叫做参数名。
-    // >> TODO 方法体中的代码可以使用参数
-    // >> TODO 参数的值在调用方法的时候需要给出，有的资料叫做实参（实际参数）
-    //    TODO 对应的，方法定义这里的参数，叫做形参（形式参数）
-    // 如果返回值是负数，就代表购买失败，比如库存不足
     public double buy(int countToBuy) {
         if (count < countToBuy) {
             System.out.println("商品库存不够");
             return -1;
         }
 
-        // FIXME: 销售应该用soldPrice而不是purchasePrice，谢谢 @Novichok 指出这个错误
         System.out.println("商品单价为" + soldPrice);
 
         int fullPriceCount = countToBuy / 2 + countToBuy % 2;
@@ -46,7 +38,6 @@ public class MerChandise {
         return totalCost;
     }
 
-    // >> TODO 一个方法可以有多个参数，多个参数之间用逗号隔开
     public double buyAndPrintLeft(int countToBuy, boolean printLeft) {
         if (count < countToBuy) {
             System.out.println("商品库存不够");
@@ -56,7 +47,6 @@ public class MerChandise {
             return -1;
         }
 
-        // FIXME: 销售应该用soldPrice而不是purchasePrice，谢谢 @Novichok 指出这个错误
         System.out.println("商品单价为" + soldPrice);
 
         int fullPriceCount = countToBuy / 2 + countToBuy % 2;
@@ -72,12 +62,10 @@ public class MerChandise {
         return totalCost;
     }
 
-    // >> TODO 参数可以是任何类型，包括自定义类型，甚至是自己的类型都没问题
     public boolean totalValueBiggerThan(MerChandise merchandiseV2) {
         return count * purchasePrice > merchandiseV2.purchasePrice * merchandiseV2.count;
     }
 
-    // >> TODO 参数可以是任何类型，包括自定义类型
     public boolean isTheBiggestTotalValueOne(SuperMarket littleSuperMarket) {
         double totalValue = count * purchasePrice;
         for (int i = 0; i < littleSuperMarket.merchandises.length; i++) {

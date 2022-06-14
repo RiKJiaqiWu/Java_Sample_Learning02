@@ -9,16 +9,7 @@ public class SuperMarketV2 {
     public int[] merchandiseSold;
     public double activityDiscount;
 
-    /**
-     * 初始化小超市
-     *
-     * @param superMarketName
-     * @param address
-     * @param parkingCount
-     * @param merchandiseCount 商品种类数
-     * @param count            每种商品缺省库存
-     */
-    public SuperMarketV2(String superMarketName, String address, int parkingCount,
+     public SuperMarketV2(String superMarketName, String address, int parkingCount,
                              int merchandiseCount, int count) {
         this.superMarketName = superMarketName;
         this.address = address;
@@ -86,11 +77,6 @@ public class SuperMarketV2 {
 
     // 一些特殊的逻辑
 
-    /**
-     * 得到利润最高的商品
-     *
-     * @return
-     */
     public MerchandiseV2 getBiggestProfitMerchandise() {
         MerchandiseV2 curr = null;
         for (int i = 0; i < merchandises.length; i++) {
@@ -103,12 +89,6 @@ public class SuperMarketV2 {
         return curr;
     }
 
-    /**
-     * 根据索引获取商品
-     *
-     * @param merchandiseIndex
-     * @return
-     */
     public MerchandiseV2 getMerchandiseOf(int merchandiseIndex) {
         if (merchandiseIndex < 0 || merchandiseIndex >= merchandises.length) {
             return null;
@@ -116,21 +96,10 @@ public class SuperMarketV2 {
         return merchandises[merchandiseIndex];
     }
 
-    /**
-     * 赚钱
-     *
-     * @param toBeAdded
-     */
     public void addIncomingSum(double toBeAdded) {
         this.incomingSum += toBeAdded;
     }
 
-    /**
-     * 花钱
-     *
-     * @param toBeSpent
-     * @return
-     */
     public boolean spendMoney(double toBeSpent) {
         if (toBeSpent > incomingSum) {
             return false;

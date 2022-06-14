@@ -9,16 +9,15 @@ public class SuperMarketMainControl {
     public static void main(String[] args) {
         // 创建一个小超市类
         SuperMarket littleSuperMarket = new SuperMarket();
-        // 依次给超市的名字，地址，停车位赋值
-        littleSuperMarket.superMarketName = "有家小超市";
-        littleSuperMarket.address = "浦东新区世纪大道666号";
+        // 依次给超市的名字，地址，赋值
+        littleSuperMarket.superMarketName = "全家Family";
+        littleSuperMarket.address = "黄浦区西藏南路400号";
         littleSuperMarket.parkingCount = 100;
         // 给超市200种商品
         littleSuperMarket.merchandises = new MerChandise[200];
         // 统计用的数组
         littleSuperMarket.merchandiseSold = new int[littleSuperMarket.merchandises.length];
 
-        // 为了使用方便，创建一个商品数组引用，和littleSuperMarket.merchandises指向同一个数组对象
         MerChandise[] all = littleSuperMarket.merchandises;
 
         // 遍历并给200种商品赋值
@@ -30,7 +29,6 @@ public class SuperMarketMainControl {
             m.purchasePrice = Math.random() * 200;
             m.soldPrice = m.purchasePrice * (1 + Math.random());
             m.id = "ID" + i;
-            // 用创建的商品，给商品数组的第i个引用赋值，all和小超市的商品数组引用指向的是同一个数组对象
             all[i] = m;
         }
 
@@ -46,14 +44,17 @@ public class SuperMarketMainControl {
             }
 
             System.out.println("请输入要购买的数量：");
+
             int count = scanner.nextInt();
 
             MerChandise m = littleSuperMarket.merchandises[index];
-            System.out.println("用户选择的商品是超市里价值最高的：" +
-                    m.isTheBiggestTotalValueOne(littleSuperMarket));
+
+            System.out.println("用户选择的商品是超市里价值最高的：" +m.isTheBiggestTotalValueOne(littleSuperMarket));
+
             double totalCost = m.buyAndPrintLeft(count, true);
 
             boolean m0BiggerThan = m0.totalValueBiggerThan(m);
+
             System.out.println("m0的总价值比用户选择的要大：" + m0BiggerThan);
 
             System.out.println("商品总价为：" + totalCost);
