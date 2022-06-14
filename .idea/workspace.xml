@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bb70904-6c8b-4cb0-b121-9904caaff9a3" name="Changes" comment="6/14">
-      <change afterPath="$PROJECT_DIR$/src/com/geekbang/supermarketV2/MerchandiseMainControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/geekbang/supermarketV2/SuperMarketV2MainControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/geekbang/supermarketV2/marketV2/MerchandiseV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/geekbang/supermarketV2/marketV2/SuperMarketV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/geekbang/guessnumber/GuessNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/geekbang/guessnumber/GuessNumberMainControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/geekbang/supermarket/Customer/Customer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +40,26 @@
     &quot;last_opened_file_path&quot;: &quot;F:/programming/IdeaProjects/Java_sample_learning/GuessNumber.java&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MerchandiseMainControl">
+  <component name="RunManager" selected="Application.GuessNumberMainControl">
     <configuration name="AiMainControl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geekbang.learn.AI.AiMainControl" />
       <module name="Java_sample_learning02" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.geekbang.learn.AI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuessNumberMainControl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbang.guessnumber.GuessNumberMainControl" />
+      <module name="Java_sample_learning02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekbang.guessnumber.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,6 +108,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GuessNumberMainControl" />
         <item itemvalue="Application.MerchandiseMainControl" />
         <item itemvalue="Application.SuperMarketV2MainControl" />
         <item itemvalue="Application.SuperMarketMainControl" />
@@ -128,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655170035653</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="6/14">
+      <created>1655179585267</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655179585267</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
